@@ -359,7 +359,7 @@ margin-bottom: 8px;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-contact-link:hover {
+.team-contact-link:hover, .team-contact-link:focus {
     background-color: #404bbf;
 }
 
@@ -385,12 +385,19 @@ gap: 48px 24px;
 
 .portfolio-item {
     width: calc((100% - 24px * 2) / 3);
+    transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-delay: 0ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover .portfolio-transition-text {
     transform: translateY(0);
 }
 
+.portfolio-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
 .portfolio-cover-wrap {
     position: relative;
     overflow: hidden;
@@ -409,7 +416,6 @@ gap: 48px 24px;
         letter-spacing: 0.02em;
         color: #f4f4fd;
         background: #4d5ae5;
-        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
         height: 100%;
         padding-left: 32px;
         padding-right: 32px;
@@ -520,6 +526,6 @@ margin-right: 120px;
                 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contact-link:hover {
+.footer-contact-link:hover, .footer-contact-link:focus {
     background-color: #31d0aa;
 }
