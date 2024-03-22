@@ -567,6 +567,16 @@ margin-right: 120px;
             color: #fff;
             padding-left: 16px;
             background-color: transparent;
+            outline: transparent;
+            transition-property: border-color;
+                transition-duration: 250ms;
+                transition-delay: 0ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.footer-input:focus {
+    border-color: #404bbf;
 }
 
 .footer-form-btn {
