@@ -232,7 +232,6 @@ img {
         min-width: 169px;
         height: 56px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-            background: #4d5ae5;
         transition-property: background-color;
             transition-duration: 250ms;
             transition-delay: 0ms;
@@ -587,12 +586,18 @@ margin-right: 120px;
             justify-content: center;
             align-items: center;
             gap: 16px;
+            transition-property: background-color;
+                transition-duration: 250ms;
+                transition-delay: 0ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+background-color: #404bbf;
 }
 
 .contacts-icon {}
-
-
 
 /* ===============MODAL OVERLAY=============== */
 
@@ -755,7 +760,16 @@ position: relative;
             letter-spacing: 0.04em;
             text-align: center;
             color: #fff;
+                        transition-property: background-color;
+                            transition-duration: 250ms;
+                            transition-delay: 0ms;
+                            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+ .button-submit:hover,
+ .button-submit:focus {
+     background-color: #404bbf;
+ }
 
 .chek-text {
     font-size: 12px;
